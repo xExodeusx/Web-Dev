@@ -1,0 +1,81 @@
+
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    color: whitesmoke;
+    font-family: Tahoma;
+    font-size: 16px;
+    background:linear-gradient(to top, #080223db, #010001cc), url(./Assets/business.jpg) no-repeat top center ;
+    background-size: cover;
+    z-index: 99;
+  }
+
+  .form-background{
+    background-color: rgba(5, 5, 31, 0.666);
+    color:white;
+    padding: 0 30px;
+
+  }
+
+h1,p{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p{
+    font-style: italic;
+}
+
+label,textarea, .not_inline, select{
+    display: block;
+}
+
+textarea, .not_inline, select{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    width:500px;
+    height: 30px;
+}
+
+.not_inline, select{
+    margin:15px 0 15px 0;
+}
+
+input{
+    margin: 0 0 15px 0;
+}
+form{
+    width:500px;
+    max-width: 800px;
+}
+
+fieldset{
+    border:none;
+    border-bottom: 2px solid rgb(152, 151, 151);
+    padding:2rem 0;
+}
+
+fieldset:last-of-type{
+    border:none;
+}
+
+.khwa, textarea{
+    margin: 30px 0 15px 0;
+}
+
+input[type="submit"] {
+    display: block;
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+    width:60%;
+    height: 2em;
+    font-size:1.1em ;
+    margin: -1em auto 1em auto;
+}
+

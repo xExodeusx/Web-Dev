@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="Survey_Form.css" />
+      <title>Survey Form</title>
+  </head>
+  <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform!</p>
+      <div class="form-background">
+        <form id="survey-form">
+            <fieldset>
+                <label for="name" id="name-label"> Name
+                    <input class="not_inline" id="name" type="text" placeholder="Enter your name" required>
+                </label>
+                <label for="email" id="email-label"> Email
+                    <input class="not_inline" id="email" type="email" placeholder="Enter your email" required>
+                </label>
+                <label for="age" id="number-label"> Age (optional)
+                    <input class="not_inline" id="number" type="number" name="age" min="12" max="120" placeholder="Age">
+                </label>
+              </fieldset>
+              <fieldset>
+                <label for="dropdown"> Which option best desctibes your current role?
+                  <select id="dropdown" name="dropdown">
+                      <option value="">Select current role</option>
+                      <option value="0">Student</option>
+                      <option value="1">Full Time Job</option>
+                      <option value="2">Part Time Job</option>
+                      <option value="3">Prefer not to say</option>
+                      <option value="4">Other</option>
+                  </select>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label>Would you recommend our services to a friend?
+                  <label for="Definitely"> <input class="khwa" type="radio" id="Definitely" name="Opinion" value="5"> Definitely
+                  </label>
+                  <label for="Maybe"><input type="radio" id="Maybe" name="Opinion" value="6"> Maybe
+                  </label>
+                  <label for="Not Sure"><input type="radio" id="Not Sure" name="Opinion" value="7"> Not Sure
+                  </label>
+                </label>
+              </fieldset>
+              <fieldset>
+                <label>What would like to see improved? (Check all that apply)
+                  <div class="flex-end">
+                    <label for="Front-end Projects"><input class="khwa" type="checkbox" name="Front-end Projects" id="Front-end Projects" value="8">Front-end Projects
+                    </label>
+                    <label for="Back-end Projects"><input type="checkbox" name="Back-end Projects" id="Back-end Projects" value="9"> Back-end Projects
+                    </label>
+                    <label for="Data Visualization"><input type="checkbox" name="Data Visualization" id="Data Visualization" value="10"> Data Visualization
+                    </label>
+                    <label for="Challenges"><input type="checkbox" name="Challenges" id="Challenges" value="11"> Challenges
+                    </label>
+                    <label for="Open Source Community"><input type="checkbox" name="Open Source Community" id="Open Source Community" value="12"> Open Source Community
+                    </label>
+                    <label for="Gitter help rooms"><input type="checkbox" name="Gitter help rooms" id="Gitter help rooms" value="13"> Gitter help rooms
+                    </label>
+                    <label for="Videos"><input type="checkbox" name="Videos" id="Videos" value="14"> Videos
+                    </label>
+                    <label for="City Meetups"><input type="checkbox" name="City Meetups" id="City Meetups" value="15"> City Meetups
+                    </label>
+                    <label for="Wiki"><input type="checkbox" name="Wiki" id="Wiki" value="16"> Wiki
+                    </label>
+                    <label for="Forum"><input type="checkbox" name="Forum" id="Forum" value="17"> Forum
+                    </label>
+                    <label for="Additional Courses"><input type="checkbox" name="Additional Courses" id="Additional Courses" value="18"> Additional Courses
+                  </div>
+                </label>
+            </fieldset>
+            <fieldset>
+              <label for="comment"> How was your experience with us? We really would love to hear!
+                  <textarea  id="comment" name="comment" placeholder="Anything that comes to mind! ^^" rows="300" cols="300"></textarea>
+              </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+  </body>
+</html>
